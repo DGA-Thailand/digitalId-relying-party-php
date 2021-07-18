@@ -20,6 +20,7 @@ composer require jumbojett/openid-connect-php
 ```php
 require __DIR__ . '/vendor/autoload.php';
 ```
+ 3. Register callbackUrl  (see config.php) with DGA Administrator , Receiving ClientID ClientSecret 
 
 ## Example 1: Basic Client ##
 
