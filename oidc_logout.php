@@ -16,7 +16,6 @@ if(isset($_SESSION['idToken']) && !empty($_SESSION['idToken'])) {
 	$cid = $clientID;
 	$secret = Utility::prepareSecret($clientSecret);
 	$oidc = new Jumbojett\OpenIDConnectClient($issuer, $cid, $secret);
-	//$oidc->setRedirectURL('http://localhost:8090/oidc_client/oidc_login.php');
 	$oidc->setVerifyHost(false); // locally
 	$oidc->setVerifyPeer(false); // locally
 
