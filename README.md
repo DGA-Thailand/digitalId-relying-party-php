@@ -12,7 +12,7 @@ A special thanks goes to Justin Richer and Amanda Anganes for their help and sup
  3. JSON extension
 
 ## Install ##
- 1. Install library using composer
+ 1. In the path you wish to enable OIDC access for, install the jumbojett component using composer
 ```
 composer require jumbojett/openid-connect-php
 ```
