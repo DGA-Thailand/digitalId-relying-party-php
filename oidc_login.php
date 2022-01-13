@@ -26,8 +26,9 @@ $oidc->addScope(array('openid',
 	'preferred_username','ial_level')
 );
 $oidc->setRedirectURL($loginCallbackURL);
- 
-$oidc->setCodeChallengeMethod('S256');
+
+// uncomment กรณีเปิดใช้งานแบบ PKCE เท่านั้น 
+//$oidc->setCodeChallengeMethod('S256');
 
 $oidc->authenticate();
 $oidc->requestUserInfo();
