@@ -4,7 +4,7 @@ class Utility {
 
   public static function prepareSecret($secret) {
   
-    return Utility::md5Secret(trim($secret), "EGA", 10);
+    return Utility::md5Secret(trim($secret), "EGA", 7);
   }
   
   private static function md5Secret($input, $salt, $round){
